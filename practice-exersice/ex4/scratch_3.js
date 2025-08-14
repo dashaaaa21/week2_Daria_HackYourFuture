@@ -16,9 +16,7 @@ const listOfBooks = [
     }
 ];
 
-for (let bookIndex in listOfBooks) {
-    const book = listOfBooks[bookIndex];
-
+for (const book of listOfBooks) {
     if (book.alreadyRead) {
         console.log(`${book.title} by ${book.author}. You already read "${book.title}".`);
     } else {
